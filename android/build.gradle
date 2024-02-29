@@ -22,6 +22,8 @@ def safeExtGet(prop, fallback) {
 
 android {
     compileSdkVersion safeExtGet('compileSdkVersion', 28)
+    buildFeatures.buildConfig true
+    namespace 'com.horcrux.svg'
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
